@@ -79,15 +79,14 @@ public class Playermove : MonoBehaviour
         {
             isGrounded = true;
             additionalJumps = defaultAdditionalJumps;
-        }
-        else
-        {
-            if (isGrounded)
+        }else
             {
+                if (isGrounded)
+                {
                 lastTimeGrounded = Time.time;
+                }
+                isGrounded = false;
             }
-            isGrounded = false;
-        }
     }
 
 }
