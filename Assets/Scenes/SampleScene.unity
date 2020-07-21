@@ -292,7 +292,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d79b918dd63616648bc5ae2158545857, type: 2}
+      objectReference: {fileID: 2100000, guid: fda1cf7d696ed5b4cad7874228658804, type: 2}
     - target: {fileID: -927199367670048503, guid: cce38cdf207c6bc4bafb5cffbc7b487a,
         type: 3}
       propertyPath: m_Name
@@ -446,7 +446,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d79b918dd63616648bc5ae2158545857, type: 2}
+      objectReference: {fileID: 2100000, guid: fda1cf7d696ed5b4cad7874228658804, type: 2}
     - target: {fileID: -927199367670048503, guid: acc21f9b103ea6a43b996c7098a26c3f,
         type: 3}
       propertyPath: m_Name
@@ -464,7 +464,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: a04eeab700b230a4980b7db7fb698f5e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.574
+      value: -2.39
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a04eeab700b230a4980b7db7fb698f5e,
         type: 3}
@@ -516,6 +516,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2416733968201007103, guid: a04eeab700b230a4980b7db7fb698f5e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fda1cf7d696ed5b4cad7874228658804, type: 2}
     - target: {fileID: -927199367670048503, guid: a04eeab700b230a4980b7db7fb698f5e,
         type: 3}
       propertyPath: m_Name
@@ -679,7 +684,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: 0.38825953, y: -0.04381172, z: 0.06011245, w: 0.91854316}
-  m_LocalPosition: {x: -1.6, y: 3.4, z: -1.5052729}
+  m_LocalPosition: {x: -1.6, y: 3.4, z: -7.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
