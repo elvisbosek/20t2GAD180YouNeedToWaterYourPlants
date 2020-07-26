@@ -478,7 +478,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5
+  wellZone: 0
   canFull: 0
+  currentPlant: {fileID: 0}
 --- !u!65 &523423311
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1211,7 +1213,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2037148252}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e06cb076077380438f095cda8800732, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!33 &2377687270692779850
