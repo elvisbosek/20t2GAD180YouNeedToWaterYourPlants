@@ -36,7 +36,7 @@ public class playerMovement : MonoBehaviour
 				canFull = false;
 			}
 			
-        }
+        } 
 	}
 
 	
