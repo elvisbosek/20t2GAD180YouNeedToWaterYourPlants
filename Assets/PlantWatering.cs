@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class PlantWatering : MonoBehaviour
 {
-    public int duration = 20;
+    public int duration;
+    float wiltTimer;
     public int timeRemaining;
     public bool isCountingDown = false;
     public playerMovement inRange;
@@ -15,7 +16,7 @@ public class PlantWatering : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        wiltTimer = duration / 2;
         if (!isCountingDown)
         {
             isCountingDown = true;
@@ -40,7 +41,7 @@ public class PlantWatering : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(timeRemaining <=10)
+        if(timeRemaining <= wiltTimer)
         {
             GetComponent<MeshFilter>().mesh = meshes[1];
         }
