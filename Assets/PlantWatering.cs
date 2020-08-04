@@ -12,6 +12,7 @@ public class PlantWatering : MonoBehaviour
     public playerMovement inRange;
     Renderer wilt;
     public Mesh[] meshes;
+    GameObject myObject;
     
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class PlantWatering : MonoBehaviour
             timeRemaining = duration;
             Invoke("_tick", 1f);
         }
+        myObject = GameObject.Find("Player");
     }
     
     private void _tick()
@@ -36,6 +38,7 @@ public class PlantWatering : MonoBehaviour
         {
             isCountingDown = false;
         }
+        
     }
 
     // Update is called once per frame
@@ -49,17 +52,15 @@ public class PlantWatering : MonoBehaviour
         {
             GetComponent<MeshFilter>().mesh = meshes[2];
         }
+        
 
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void FixedUpdate()
     {
-        if(collision.gameObject.GetComponent<playerMovement>())
+        if (!inRange == false && Input.GetKey("e") && myObject.GetComponent<playerMovement>().canFull == true)
         {
-            if(collision.gameObject.GetComponent<playerMovement>().canFull == true)
-            {
-                timeRemaining = timeRemaining + 10;
-            }
+            timeRemaining += 10;
         }
     }
 

@@ -13,6 +13,7 @@ public class playerMovement : MonoBehaviour
 	public bool wellZone = false;
 	public bool canFull = false;
 	public PlantWatering currentPlant;
+	//public object myObject;
 
 	// Use this for initialization
 	void Start() 
