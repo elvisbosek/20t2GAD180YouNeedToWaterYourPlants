@@ -345,7 +345,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148807145}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.3553219, y: 2.6389322, z: 1.0131321}
@@ -368,10 +368,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64ad1c1476ce4084ebf1bed80758a7a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 20
+  duration: 60
   timeRemaining: 0
   isCountingDown: 0
-  inRange: {fileID: 0}
+  inRange: {fileID: 2107558912}
   meshes: []
 --- !u!1 &159096619 stripped
 GameObject:
@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64ad1c1476ce4084ebf1bed80758a7a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 20
+  duration: 75
   timeRemaining: 0
   isCountingDown: 0
   inRange: {fileID: 2107558912}
@@ -955,7 +955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64ad1c1476ce4084ebf1bed80758a7a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 20
+  duration: 65
   timeRemaining: 0
   isCountingDown: 0
   inRange: {fileID: 2107558912}
@@ -1227,7 +1227,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918953074}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.1000001, y: 1.3, z: 1.1}
@@ -1321,6 +1321,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25be1c8c855c50946ac497b531eeed4f, type: 3}
+--- !u!1 &1022064560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 0e23b31d95fed59488127b38d0308d32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1779883910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1022064562
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022064560}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1055619, y: 1.9366322, z: 1.1413788}
+  m_Center: {x: 0.052780926, y: 0.46831608, z: 0.7658487}
 --- !u!1 &1418089049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1789,10 +1808,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64ad1c1476ce4084ebf1bed80758a7a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 20
+  duration: 70
   timeRemaining: 0
   isCountingDown: 0
-  inRange: {fileID: 0}
+  inRange: {fileID: 2107558912}
   meshes: []
 --- !u!1 &1716153990
 GameObject:
@@ -2847,7 +2866,7 @@ MonoBehaviour:
   movementSpeed: 5
   wellZone: 0
   canFull: 0
-  currentPlant: {fileID: 0}
+  currentPlant: {fileID: 148807148}
 --- !u!4 &2107558913 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a04eeab700b230a4980b7db7fb698f5e,
