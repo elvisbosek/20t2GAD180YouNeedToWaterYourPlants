@@ -914,7 +914,12 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: cce38cdf207c6bc4bafb5cffbc7b487a,
         type: 3}
       propertyPath: m_Name
-      value: Rose 1
+      value: Rose
+      objectReference: {fileID: 0}
+    - target: {fileID: 2534866581884222612, guid: cce38cdf207c6bc4bafb5cffbc7b487a,
+        type: 3}
+      propertyPath: m_Name
+      value: Rose
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cce38cdf207c6bc4bafb5cffbc7b487a, type: 3}
@@ -958,8 +963,11 @@ MonoBehaviour:
   duration: 65
   timeRemaining: 0
   isCountingDown: 0
-  inRange: {fileID: 2107558912}
-  meshes: []
+  inRange: {fileID: 0}
+  meshes:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1001 &815847859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1767,7 +1775,12 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: accd91871505a83409c4cc27cdf9030e,
         type: 3}
       propertyPath: m_Name
-      value: White Flower (1)
+      value: 'White Flower '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2534866581884222612, guid: accd91871505a83409c4cc27cdf9030e,
+        type: 3}
+      propertyPath: m_Name
+      value: WhiteFlower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: accd91871505a83409c4cc27cdf9030e, type: 3}
