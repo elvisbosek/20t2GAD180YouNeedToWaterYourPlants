@@ -35,6 +35,7 @@ public class playerMovement : MonoBehaviour
             if (Input.GetKey("e"))
             {
 				canFull = false;
+				eventManager.current.watering();
 			}
 			
         } 

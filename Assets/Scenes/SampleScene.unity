@@ -882,7 +882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 30
-  timeRemaining: 10
+  timeRemaining: 0
   isCountingDown: 0
   inRange: {fileID: 1209154689}
   meshes:
