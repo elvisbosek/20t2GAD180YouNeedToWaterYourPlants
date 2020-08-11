@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine;
 
 public class PlantWatering : MonoBehaviour
@@ -17,6 +18,9 @@ public class PlantWatering : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        eventManager.current.onPressWater += waterPlant;
+        
+        
         wiltTimer = duration / 2;
         if (!isCountingDown)
         {
@@ -25,6 +29,11 @@ public class PlantWatering : MonoBehaviour
             Invoke("_tick", 1f);
         }
         myObject = GameObject.Find("Player");
+    }
+
+    private void waterPlant()
+    {
+        timeRemaining += 10;
     }
     
     private void _tick()
@@ -56,13 +65,13 @@ public class PlantWatering : MonoBehaviour
 
     }
 
-    private void FixedUpdate()
+    /*private void FixedUpdate()
     {
         if (!inRange == false && Input.GetKey("e") && myObject.GetComponent<playerMovement>().canFull == true)
         {
             timeRemaining += 10;
         }
-    }
+    } */
 
     private void OnTriggerEnter(Collider otherobject)
     {
