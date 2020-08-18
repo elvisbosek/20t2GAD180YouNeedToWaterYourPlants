@@ -13,6 +13,10 @@ public class playerMovement : MonoBehaviour
 	public bool wellZone = false;
 	public bool canFull = false;
 	public PlantWatering currentPlant;
+	public WhiteFlower whiteFlower;
+	public Mushroom mushRoom;
+	public SunflowerScript sunFlower;
+	public Rose rose;
 	//public object myObject;
 
 	// Use this for initialization
@@ -39,6 +43,38 @@ public class playerMovement : MonoBehaviour
 			}
 			
         } 
+		if(whiteFlower !=null && canFull == true)
+        {
+			if(Input.GetKey("e"))
+            {
+				canFull = false;
+				eventManager.current.waterWhite();
+            }
+        }
+		if (mushRoom != null && canFull == true)
+        {
+			if(Input.GetKey("e"))
+            {
+				canFull = false;
+				eventManager.current.waterMushroom();
+            }
+        }
+		if(sunFlower !=null && canFull == true)
+        {
+			if(Input.GetKey("e"))
+            {
+				canFull = false;
+				eventManager.current.waterSunflower();
+            }
+        }
+		if (rose != null && canFull == true)
+		{
+			if (Input.GetKey("e"))
+			{
+				canFull = false;
+				eventManager.current.waterRose();
+			}
+		}
 	}
 
 	
@@ -83,7 +119,27 @@ public class playerMovement : MonoBehaviour
 			currentPlant = otherObject.gameObject.GetComponent<PlantWatering>();
 
 		}
-    }
+		if (otherObject.gameObject.GetComponent<WhiteFlower>())
+		{
+			whiteFlower = otherObject.gameObject.GetComponent<WhiteFlower>();
+
+		}
+		if (otherObject.gameObject.GetComponent<Mushroom>())
+		{
+			mushRoom = otherObject.gameObject.GetComponent<Mushroom>();
+
+		}
+		if (otherObject.gameObject.GetComponent<SunflowerScript>())
+		{
+			sunFlower = otherObject.gameObject.GetComponent<SunflowerScript>();
+
+		}
+		if (otherObject.gameObject.GetComponent<Rose>())
+		{
+			rose = otherObject.gameObject.GetComponent<Rose>();
+
+		}
+	}
 	public void OnTriggerExit(Collider otherObject)
     {
 		if(otherObject.gameObject.name == "Well")
@@ -93,6 +149,22 @@ public class playerMovement : MonoBehaviour
 		if (otherObject.gameObject.GetComponent<PlantWatering>())
 		{
 			currentPlant = null;
+		}
+		if (otherObject.gameObject.GetComponent<WhiteFlower>())
+		{
+			whiteFlower = null;
+		}
+		if (otherObject.gameObject.GetComponent<Mushroom>())
+		{
+			mushRoom = null;
+		}
+		if (otherObject.gameObject.GetComponent<SunflowerScript>())
+		{
+			sunFlower = null;
+		}
+		if (otherObject.gameObject.GetComponent<Rose>())
+		{
+			rose = null;
 		}
 	}
 }
