@@ -21,4 +21,39 @@ public class eventManager : MonoBehaviour
             onPressWater();
         }
     }
+    public event Action RoseWater;
+    public void waterRose()
+    {
+        if(RoseWater!=null)
+        {
+            RoseWater();
+        }
+    }
+
+    public event Action SunflowerWater;
+    public void waterSunflower()
+    {
+        if(SunflowerWater!=null)
+        {
+            SunflowerWater();
+        }    
+    }
+
+    public event Action MushroomWater;
+    public void waterMushroom()
+    {
+        if(MushroomWater!=null)
+        {
+            MushroomWater();
+        }
+    }
+
+    public event Action WhiteWater;
+    public void waterWhite()
+    {
+        if(WhiteWater!=null)
+        {
+            WhiteWater();
+        }
+    }
 }
