@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿/*using UnityEngine;
 using UnityEngine.Event;
 
 public class CharacterController : MonoBehaviour
@@ -143,7 +143,7 @@ public class CharacterController : MonoBehaviour
         theScaleScale.x *= -1;
         transform.localScale = theScalel;
     }
-}
+}*/
 
 
 
