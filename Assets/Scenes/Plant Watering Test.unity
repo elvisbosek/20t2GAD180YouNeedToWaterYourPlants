@@ -683,7 +683,10 @@ MonoBehaviour:
   timeRemaining: 0
   isCountingDown: 0
   inRange: {fileID: 0}
-  meshes: []
+  meshes:
+  - {fileID: -2432090755550338912, guid: 9f0405a071fa6804f8e22760f81d21b6, type: 3}
+  - {fileID: -2432090755550338912, guid: 69db348d894cbfb4eab45b8deb38c1a6, type: 3}
+  - {fileID: -2432090755550338912, guid: 0af786a55e4437449bb9876de83250ba, type: 3}
 --- !u!1001 &1076880288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -953,7 +956,10 @@ MonoBehaviour:
   timeRemaining: 0
   isCountingDown: 0
   inRange: {fileID: 0}
-  meshes: []
+  meshes:
+  - {fileID: -2432090755550338912, guid: accd91871505a83409c4cc27cdf9030e, type: 3}
+  - {fileID: -2432090755550338912, guid: b9b13e37ea17e124f89ee7a3585c646f, type: 3}
+  - {fileID: -2432090755550338912, guid: 0af786a55e4437449bb9876de83250ba, type: 3}
 --- !u!65 &1582064296
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1291,7 +1297,10 @@ MonoBehaviour:
   timeRemaining: 0
   isCountingDown: 0
   inRange: {fileID: 0}
-  meshes: []
+  meshes:
+  - {fileID: -2432090755550338912, guid: cce38cdf207c6bc4bafb5cffbc7b487a, type: 3}
+  - {fileID: -2432090755550338912, guid: 19ce01b7411b0fb40b32f8f228fc2eda, type: 3}
+  - {fileID: -2432090755550338912, guid: 0af786a55e4437449bb9876de83250ba, type: 3}
 --- !u!65 &2090864987
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1382,7 +1391,10 @@ MonoBehaviour:
   timeRemaining: 0
   isCountingDown: 0
   inRange: {fileID: 0}
-  meshes: []
+  meshes:
+  - {fileID: -2432090755550338912, guid: 36a3d026e3919724a9aaacf8297a1b5c, type: 3}
+  - {fileID: -2432090755550338912, guid: 5bdde311d5a42ea4c89c7395152955ea, type: 3}
+  - {fileID: -2432090755550338912, guid: 0af786a55e4437449bb9876de83250ba, type: 3}
 --- !u!224 &2631845782444369714
 RectTransform:
   m_ObjectHideFlags: 0

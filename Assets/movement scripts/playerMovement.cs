@@ -12,7 +12,6 @@ public class playerMovement : MonoBehaviour
 	public float movementSpeed;
 	public bool wellZone = false;
 	public bool canFull = false;
-	public PlantWatering currentPlant;
 	public WhiteFlower whiteFlower;
 	public Mushroom mushRoom;
 	public SunflowerScript sunFlower;
@@ -33,16 +32,6 @@ public class playerMovement : MonoBehaviour
 				canFull = true;
 			}
 		}
-		if(currentPlant != null && canFull == true)
-        {
-            //water plant
-            if (Input.GetKey("e"))
-            {
-				canFull = false;
-				eventManager.current.watering();
-			}
-			
-        } 
 		if(whiteFlower !=null && canFull == true)
         {
 			if(Input.GetKey("e"))
@@ -97,6 +86,7 @@ public class playerMovement : MonoBehaviour
 		if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey("a") && !Input.GetKey("d"))
         {
 			transform.position += transform.TransformDirection(Vector3.left) * Time.deltaTime * movementSpeed * 2.5f;
+			
         }
 		if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey("d") && !Input.GetKey("a"))
         {
@@ -114,11 +104,6 @@ public class playerMovement : MonoBehaviour
         {
 			wellZone = true;
         }
-		if(otherObject.gameObject.GetComponent<PlantWatering>())
-        {
-			currentPlant = otherObject.gameObject.GetComponent<PlantWatering>();
-
-		}
 		if (otherObject.gameObject.GetComponent<WhiteFlower>())
 		{
 			whiteFlower = otherObject.gameObject.GetComponent<WhiteFlower>();
@@ -146,10 +131,6 @@ public class playerMovement : MonoBehaviour
         {
 			wellZone = false;
         }
-		if (otherObject.gameObject.GetComponent<PlantWatering>())
-		{
-			currentPlant = null;
-		}
 		if (otherObject.gameObject.GetComponent<WhiteFlower>())
 		{
 			whiteFlower = null;

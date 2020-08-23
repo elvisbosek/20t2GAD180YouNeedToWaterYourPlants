@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Serialization;
@@ -77,7 +77,7 @@ public class PlantWatering : MonoBehaviour
             }
         } */
 
-        private void OnTriggerEnter(Collider otherobject)
+        /*private void OnTriggerEnter(Collider otherobject)
         {
             if (otherobject.gameObject.GetComponent<playerMovement>())
             {
@@ -92,4 +92,4 @@ public class PlantWatering : MonoBehaviour
             }
         }
     
-}
+}*/
